@@ -24,8 +24,72 @@ The output of the mandrel signal can be seen in the picture below, the pictures 
 <br>
 
 <p align="center">
-<img src="https://github.com/6amir6hosein6/Microhardness-measurement-by-image-processing/blob/main/documentation/image2.png" width="30%">
+<img src="https://github.com/6amir6hosein6/Microhardness-measurement-by-image-processing/blob/main/documentation/image2.png" width="25%">
   &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/6amir6hosein6/Microhardness-measurement-by-image-processing/blob/main/image.jpeg" width="30%" />
+  &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/6amir6hosein6/Microhardness-measurement-by-image-processing/blob/main/image.jpeg" width="25%" />
 </p>
+
+<hr>
+
+### Step 1 :
+
+As we embark on our OpenCV project, the first step will involve enhancing the quality of our images by adjusting their settings. The following changes will be made to achieve this goal:
+
+1. Increase the light balance by 20%
+2. Decrease the brightness by 25%
+3. Increase the contrast by 10%
+4. Increase the saturation by 15%
+5. Adjust the temperature by 17%
+
+The temperature adjustment is especially critical to achieving the desired results. The result of these modifications will be a significantly improve0d image, as shown below:
+
+
+<p align="center">
+<img src="https://github.com/6amir6hosein6/Microhardness-measurement-by-image-processing/blob/main/image_edit.jpeg" width="25%" />
+  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+  &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/6amir6hosein6/Microhardness-measurement-by-image-processing/blob/main/image_edit2.jpeg" width="25%" />
+</p>
+
+### Step 2 :
+
+After adjusting the settings of our image as outlined in the previous step, the next phase of our OpenCV project involves thresholding. Applying thresholding to the image will result in the following output:
+<p align="center">
+<img src="https://github.com/6amir6hosein6/Microhardness-measurement-by-image-processing/blob/main/threshed_image.jpeg" width="25%" />
+</p>
+
+### Step 3 :
+
+With the thresholded image produced in the previous step, we now move on to the next stage of our OpenCV project. The goal of this step is to reduce noise and smooth out the image. To achieve this, we will apply a technique known as blurring. After blurring the thresholded image, we will perform buffering to enhance the edges and contours in the image. These processes will result in a cleaner and more polished image.
+
+<p align="center">
+    <img src="https://github.com/6amir6hosein6/Microhardness-measurement-by-image-processing/blob/main/threshed_image_unnoised.jpeg" width="25%" />
+  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+    <img src="https://github.com/6amir6hosein6/Microhardness-measurement-by-image-processing/blob/main/threshed_image_unnoised_smooth.jpeg" width="25%" />
+</p>
+
+### Step 4 :
+
+In this phase of our OpenCV project, we will obtain the contours of the image produced in the previous step. After obtaining the contours, we will then extract the sharp points of those contours.
+
+<p align="center">
+    <img src="https://github.com/6amir6hosein6/Microhardness-measurement-by-image-processing/blob/main/contours.jpeg" width="25%" />
+  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+    <img src="https://github.com/6amir6hosein6/Microhardness-measurement-by-image-processing/blob/main/corner_detection.jpeg" width="25%" />
+</p>
+
+### Step 4 :
+
+we will draw a line between the detected sharp points and superimpose it on the original image.
+
+<p align="center">
+    <img src="https://github.com/6amir6hosein6/Microhardness-measurement-by-image-processing/blob/main/final_image.jpeg" width="25%" />
+  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+    <img src="https://github.com/6amir6hosein6/Microhardness-measurement-by-image-processing/blob/main/final_image2.jpeg" width="25%" />
+</p>
+
+
+
+
 
